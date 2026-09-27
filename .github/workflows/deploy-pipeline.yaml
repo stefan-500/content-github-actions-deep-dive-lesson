@@ -52,7 +52,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v7
       - name: create docs folder
-        run: mdkir docs
+        run: mkdir docs
       - name: convert md to html
         uses: docker://pandoc/core:2.9
         with:
